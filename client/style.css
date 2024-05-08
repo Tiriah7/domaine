@@ -1,0 +1,723 @@
+*{margin: 0;}
+html{height:100%;}
+body {
+    height:100%;
+    font-family: "Poppins", sans-serif;
+    background-image: url('/domaine/client/img/j1v6.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 1200px;
+    margin:0 auto;
+    font-size: 16px;
+}
+@media(max-width: 768px){
+  body{
+    font-size: 14px;
+    width:100%;
+    background-image: url('/domaine/client/img/j1v62.jpg');
+  }
+  h4{font-size: 16px;}
+}
+@media(max-width: 480px){
+  body{
+    font-size: 12px;
+    width:100%;
+  }
+  h4{font-size: 16px;}
+  .popup {
+    display: none;
+    position: fixed;
+    top: 200px;
+    width: 50%;
+    height: 25%;
+    left: 0px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    
+  }
+}
+/* Header styles */
+header {
+    background-image: url('/domaine/client/img/j1v.jpg');
+    background-position: top;
+    width: 100%;
+    height: 13%;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+}
+p{
+    color:black;
+    font-size: 15px;
+    padding-left: 20px;
+}
+h4{
+    padding-left: 20px;
+}
+button{
+    margin-right: 0px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: purple;
+    font-family:"Poppins", sans-serif;
+  }
+  #toggleButton1{
+    margin-right: 0px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: purple;
+    font-family:"Poppins", sans-serif;
+    background-color:lightblue;
+  }
+.desktopnav ul {
+    list-style: none;
+    display:flex;
+    text-align: right;
+    padding-left: 800px;
+}
+
+.desktopnav ul li {
+    margin-right:30px;
+}
+
+.desktopnav ul li a {
+    text-decoration: none;
+    color:white;
+    
+}
+.desktopnav ul li a:hover{
+    background-color: whitesmoke;
+    padding:10px;
+    margin: 10px;
+    color: purple;
+    border-radius: 10px;
+}
+/* Styles for mobile menu */
+.mobile-menu-icon {
+  display: block; /* Initially show the menu icon */
+  cursor: pointer;
+}
+
+.mobile-menu, .mobilenav {
+  display: none; /* Initially hide the mobile menu */
+}
+
+/* Styles for the hamburger bars */
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.mobile-menu{
+  background-color: whitesmoke;
+  width: 50%;
+  height:200px;
+  border-radius: 20px;
+  z-index: 2;
+  position: absolute;
+  /* padding: 10px 10px 10px 10px; */
+  list-style-type:none;
+  padding-top: 40px;
+}
+.mobile-menu li{
+  display: inline; 
+  border-bottom: 3px solid #ccc;
+  transition: background-color 0.3s;
+}
+.mobile-menu a{
+  text-decoration: none;
+  color: purple;
+  font-size: 20px;
+  padding: 10px 10px 10px 10px;
+  margin-bottom: 20px;
+}
+  
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  .desktopnav {
+      display: none; /* Hide the desktop navigation on small screens */
+  }
+
+  .mobilenav, .mobile-menu-icon {
+      display: block; /* Show the menu icon on small screens */
+  }
+}
+.logo {
+    font-size: 65px;
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    color: purple;
+    position: fixed;
+}
+  .logo1 {
+    font-size: 65px;
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    color: purple;
+    position: fixed;
+    padding-left: 50px;
+  }
+@media (max-width: 480px){
+  .logo1 {
+    font-size: 40px;
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    color: purple;
+    position: fixed;
+  }
+}
+@media (min-width: 480px){
+  .logo1 {
+    font-size: 50px;
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    color: purple;
+    position: fixed;
+  }
+}
+.wrapper {
+    flex: 1;
+}
+.wrapper::after {
+    content: "";
+    flex: 1;
+    display: block;
+}
+
+.wrapper::after, footer {
+    transition: height 0.3s;
+}
+#content{
+    overflow: hidden;
+    padding-top: 130px;
+    width: 98%;
+}
+h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    padding-left: 20px;
+
+}
+h2{
+    font-family: 'Great Vibes', cursive;
+    font-size: 35px;
+    padding-left: 50px;
+}
+/* Footer styles */
+.footer {
+  margin-left: 60px;
+    padding: 20px;
+    background-color: aliceblue;
+    text-align: center;
+    align-items: center;
+    color: black;
+    width:90%;
+    font-size: 20px;
+    font-weight: lighter;
+    bottom: 10px;
+    border-radius: 10px;
+ }
+@media (max-width:768px){
+  .footer{
+    margin-left: 10px;
+    width:86%;
+  }
+}
+.vertical-list {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 20px;
+    font-weight: lighter;
+    width: 500px;
+    border-radius: 5px;
+    /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); */
+}
+
+.vertical-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    transition: background-color 0.3s;
+}
+
+.vertical-list li:last-child {
+    border-bottom: none; /* Remove border for the last item */
+}
+  .slideshow-container1, .slideshow-container2, .slideshow-container3, .slideshow-container4, .slideshow-container5,
+  .slideshow-container6, .slideshow-container7 {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    padding-left: 70px;
+  }
+ @media (min-width:480px){
+  .slideshow-container1, .slideshow-container2, .slideshow-container3, .slideshow-container4, .slideshow-container5,
+  .slideshow-container6, .slideshow-container7 {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    padding-left: 80px;
+  }
+  .numbertext{display:none;}
+ }
+ @media (max-width:480px){
+  .slideshow-container1, .slideshow-container2, .slideshow-container3, .slideshow-container4, .slideshow-container5,
+  .slideshow-container6, .slideshow-container7 {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    padding-left: 20px;
+    .numbertext{display:none;}
+  }
+ }
+.slideshow-container1 img, .slideshow-container2 img, .slideshow-container3 img, .slideshow-container4 img, .slideshow-container5 img,
+.slideshow-container6 img, .slideshow-container7 img{
+    margin-right: 5px;
+    max-width: 100%; /* Ensure the images don't exceed their parent container's width */
+    height: 300px; /* Allow the images to adjust their height while maintaining aspect ratio */
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px lightblue;
+} 
+ @media (max-width:768px){
+  .slideshow-container1 img, .slideshow-container2 img, .slideshow-container3 img, .slideshow-container4 img, .slideshow-container5 img,
+.slideshow-container6 img, .slideshow-container7 img{
+    margin-right: 5px;
+    max-width: 100%; /* Ensure the images don't exceed their parent container's width */
+    height: 300px; /* Allow the images to adjust their height while maintaining aspect ratio */
+    max-height: 300px; /* Limit the maximum height of the images (adjust as needed) */
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px lightblue;
+    margin-left: 0px;
+} 
+ }
+ @media (max-width:480px){
+  .slideshow-container1 img, .slideshow-container2 img, .slideshow-container3 img, .slideshow-container4 img, .slideshow-container5 img,
+.slideshow-container6 img, .slideshow-container7 img{
+    margin-right: 5px;
+    max-width: 100%; /* Ensure the images don't exceed their parent container's width */
+    height: 100px; /* Allow the images to adjust their height while maintaining aspect ratio */
+    max-height: 300px; /* Limit the maximum height of the images (adjust as needed) */
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px lightblue;
+    margin-left: 0px;
+} 
+ }
+  /* Hide the images by default */
+  .mySlides .fade{
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+ 
+  @media (max-width:768px){
+    .slideshow-container1 img, .slideshow-container2 img, .slideshow-container3 img, .slideshow-container4 img, .slideshow-container5 img,
+    .slideshow-container6 img, .slideshow-container7 img{
+      display: none;
+    }
+    .slideshow1{
+      display: block;
+    }
+  }
+  /* Next & previous buttons */
+  .prev1, .prev2, .prev3, .prev4, .prev5, .prev7, .next1, .next2, .next3, .next4, .next5, .next7{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 5px;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next1, .next2, .next3, .next4, .next5, .next7 {
+    right: 0px;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev1, .prev2, .prev3, .prev4, .prev5, .prev7 {
+    left: 0px;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev1:hover, .prev2:hover, .prev3:hover, .prev4:hover, .prev5:hover, .prev7:hover, .next1:hover, .next2:hover, .next3:hover,
+   .next4:hover, .next5:hover, .next7:hover {
+    background-color:lightcyan;
+  }
+  
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color:blue;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  /* Mobile slideshow */
+/* Desktop view */
+.slideshow1, .slideshow2, .slideshow3, .slideshow4, .slideshow5, .slideshow6, .slideshow7 {
+  display:none;
+}
+/* Mobile view */
+@media screen and (max-width: 768px) {
+  .slideshow1, .slideshow2, .slideshow3, .slideshow4, .slideshow5, .slideshow6, .slideshow7 {
+      display: block;
+      background-color: beige;
+      overflow: auto;
+      white-space: nowrap;
+      padding: 10px;
+      margin-left: 10px;
+      border-radius: 10px;
+      z-index: 2;
+  }
+  .slideshow1 img,.slideshow2 img,.slideshow3 img,.slideshow4 img,.slideshow5 img,.slideshow6 img,.slideshow7 img {
+    padding: 10px;
+    height: 300px;
+  }
+  .prev1, .prev2, .prev3, .prev4, .prev5, .prev7, .next1, .next2, .next3, .next4, .next5, .next7{
+    display: none;
+  }
+}
+
+  /* Your CSS styles for button and flags */
+.flag-button {
+  display: flex;
+  align-items: center;
+  /* padding: 10px 20px; */
+  font-size: 16px;
+  color: purple; /* Button text color */
+  border: none;
+  border-radius: 5px;
+  cursor:pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.flag-button:hover {
+  background-color: whitesmoke; /* Button background color on hover */
+}
+
+.flag-icon {
+  width: 20px; /* Adjust the flag size as needed */
+  height: 15px;
+  margin-right: 5px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.flag-fr {
+  background-image: url('/domaine/client/img/fr.png'); 
+}
+
+.flag-uk {
+  background-image: url('/domaine/client/img/br.png'); 
+}
+#flag-button {
+  display: inline-flex;
+ }
+/* CSS styles for navbar, popup, and button */
+.popup {
+  display: none;
+  position: fixed;
+  top: 200px;
+  width: 50%;
+  height: 25%;
+  padding-left: 300px;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  .popup {
+      width: 90%; /* Adjust the width for smaller screens */
+      height: auto; /* Allow the height to adjust based on content */
+      max-height: 80%; /* Limit the maximum height */
+      top: 50%; /* Center vertically */
+      left: 50%; /* Center horizontally */
+      transform: translate(-50%, -50%); /* Center the popup */
+      padding: 20px; /* Add some padding */
+  }
+  .close {
+    position: absolute;
+    margin-top: 10px;
+    margin-right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+}
+.popup-content {
+  background-color:whitesmoke;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+/* Offer popup */
+/* Popup container styles */
+/* Styling for the popup */
+ .popup1 {
+  display: none;
+  position: fixed;
+  top: 200px;
+  width: 50%;
+  height: 25%;
+  left: 300px;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .popup1 {
+      width: 90%; /* Adjust the width for smaller screens */
+      height: auto; /* Allow the height to adjust based on content */
+      max-height: 80%; /* Limit the maximum height */
+      top: 50%; /* Center vertically */
+      left: 50%; /* Center horizontally */
+      transform: translate(-50%, -50%); /* Center the popup */
+      padding: 20px; /* Add some padding */
+  }
+  .close {
+    position: absolute;
+    margin-top: 10px;
+    margin-right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+}
+.popup1 p {
+  background-color:whitesmoke;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;} */
+
+/* Styling for the close button */
+#closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 5px;
+  }
+  50% {
+    box-shadow: 0 0 20px ;
+  }
+  100% {
+    box-shadow: 0 0 5px ;
+  }
+} 
+/* Styling for the open button (just for demonstration) */
+#popbtn{
+  margin-left: 1000px;
+  top: 550px;
+  background-color: wheat;
+  color: purple;
+  font-family: "Great vibes", cursive;
+  font-size: 25px;
+  font-weight: bold;
+  position:fixed;
+  border: none;
+  cursor: pointer;
+  animation: glowing 2000ms infinite;
+  padding: 10px;
+}
+@media (max-width: 480px) {
+  #popbtn{
+    margin-left: 220px;
+    top:600px;
+    background-color: wheat;
+    color: purple;
+    font-family: "Great vibes", cursive;
+    font-size: 25px;
+    font-weight: bold;
+    position:fixed;
+    border: none;
+    cursor: pointer;
+    animation: glowing 2000ms infinite;
+    padding: 10px;
+  }
+}
+@media (min-width:480px){
+  #popbtn{
+    margin-left: 600px;
+    top: 800px;
+    background-color: wheat;
+    color: purple;
+    font-family: "Great vibes", cursive;
+    font-size: 25px;
+    font-weight: bold;
+    position:fixed;
+    border: none;
+    cursor: pointer;
+    animation: glowing 2000ms infinite;
+    padding: 10px;
+  }
+}
+@media(min-width:768px){
+  #popbtn{
+    margin-left: 1000px;
+    top: 500px;
+    background-color: wheat;
+    color: purple;
+    font-family: "Great vibes", cursive;
+    font-size: 25px;
+    font-weight: bold;
+    position:fixed;
+    border: none;
+    cursor: pointer;
+    animation: glowing 2000ms infinite;
+    padding: 10px;
+  }
+}
+#status1, #status2, #status3, #status4, #status5{
+  display: none;
+  background-color: aliceblue;
+  padding: 10px;
+  width:70px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: "Poppins",sans-serif;
+  margin-left: 20px;
+}
+#LoginButton, #LoginButton1, #LoginButton2{
+  display: inline-block;
+  padding: 10px;
+  background-color: skyblue;
+  color: black;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#LoginButton:hover, #LoginButton1:hover{
+  background-color: #0056b3;
+}
+/* CSS for the login popup */
+#LoginPopup {
+  display: none; /* Hide the popup by default */
+  position: fixed;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  height: 300px;
+  width:40%;
+  border-radius: 10px;
+}
+
+/* CSS for the login popup */
+#RegPopup {
+  display: none; /* Hide the popup by default */
+  position: fixed;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  height: 300px;
+  width:40%;
+  border-radius: 10px;
+}
+label {
+  display: block;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #555;
+}
+#logdiv{
+  display: flex;
+}
+@media(max-width:768px){
+  #RegPopup{
+    width: 70%;
+  }
+  #LoginPopup{
+    width: 70%;
+  }
+}
+#logbtn, #logging, #regbtn{
+  cursor: pointer;
+  background-color:skyblue;
+  color:purple;
+  font-weight: bolder;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+#logbtn:hover, #logging:hover, #regbtn:hover{
+  background-color: #0056b3;
+  color:black;
+}
+#book101, #book202, #book303, #book404, #book505{
+  display: flex; 
+  align-items: center;
+}
+#bookbtn101, #bookbtn202, #bookbtn303, #bookbtn404, #bookbtn505 {
+  margin-left: 30px;
+  cursor: pointer;
+  background-color: #0056b3;
+  color: white;
+  display: none;
+}
